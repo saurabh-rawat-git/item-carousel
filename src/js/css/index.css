@@ -1,0 +1,95 @@
+.itemsContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    animation: mymove 0.4s;
+}
+
+.itemsContainer .cardContainer{
+    margin: 5px;
+    width: 29.5%;
+    flex: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #00416d, #66bfbf);
+    opacity: 0.5;
+    
+}
+
+.cardContainer.midItem{
+    margin-bottom: 90px;
+    width: 39%;
+    opacity: 1;
+}
+
+@keyframes mymove {
+    from {left: 200px;}
+    to {left: 0px;}
+  }
+
+.cardImage{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cardHeader{
+    text-align: center;
+    font-family: cursive;
+}
+
+.cardContent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.cardFooter > div{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+
+.leftIcon{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.rightIcon{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 5px 0 0;
+}
+
+.nodata{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3em;
+}
+
+.nodataImg {
+    height: 100px;
+}
